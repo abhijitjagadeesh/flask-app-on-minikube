@@ -5,7 +5,7 @@ When you hit the route it will return the uuid of the application.
 
 # Deploying this in minikube
 Build the docker image: docker build -t my-flask-app .
-start your minilue cluster: minikube start
+start your minikube cluster: minikube start
 upload the built docker image to minikube: minikube upload my-flask-app
 apply the deployment: kubectl apply -f k8/flask-deployment.yaml
 apply the service for the deployment: kubectl apply -f k8/flask-service.yaml
